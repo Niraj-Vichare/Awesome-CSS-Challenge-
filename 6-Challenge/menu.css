@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(21, 19, 19);
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-color: rgb(254, 24, 85);
+  box-shadow: 0 0px 10px 0 rgb(76, 255, 32);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+}
+
+.dot-1{
+    position: absolute;
+    z-index: 3;
+    background-color: rgb(255, 0, 0);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation-fill-mode: both;
+    animation: jump-1 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+}
+
+.dot-2{
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(255, 225, 0);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation-fill-mode: both;
+    animation: jump-2 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+}
+.dot-3{
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(0, 168, 205);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    animation-fill-mode: both;
+    animation: jump-3 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+}
+
+@keyframes jump-1{
+    0%,60%{
+        box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.23);
+        transform: scale(0);
+    }
+    100%{
+        box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.243);
+        transform: scale(1);
+    }
+}
+@keyframes jump-2{
+    0%,30%{
+        box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.23);
+        transform: scale(0);
+    }
+    90%{
+        box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.243);
+        transform: scale(1);
+    }
+}
+@keyframes jump-3{
+    0%,10%{
+        box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.23);
+        transform: scale(0);
+    }
+    100%{
+        box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.243);
+        transform: scale(1);
+    }
+}

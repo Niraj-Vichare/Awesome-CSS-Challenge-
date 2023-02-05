@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    position: absolute;
+    width: 450px;   
+    height: 500px;
+    top:50%;
+    padding: 10px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(2, 2, 50);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.moon{
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 #ffef98;
+    animation: rise 1s ease-in-out;
+}
+
+.creaters{
+    position: absolute;
+    border-radius: 10px;
+    background-color: #c5d48ad3;
+}
+
+.creater-1{
+    top:20px;
+    left: 38px;
+    width: 15px;
+    height: 18px;
+    background-color: rgb(171, 171, 171);
+}
+.creater-2{
+    top:20px;
+    left: 68px;
+    width: 11px;
+    height: 11px;
+    background-color: rgba(171, 171, 171, 0.635);
+}
+
+.creater-3{
+    top:60px;
+    left: 88px;
+    width: 11px;
+    height: 11px;
+    background-color: rgba(171, 171, 171, 0.635);
+}
+.creater-4{
+    top:70px;
+    left: 28px;
+    width: 11px;
+    height: 11px;
+    background-color: rgba(171, 171, 171, 0.635);
+}
+.creater-5{
+    top:85px;
+    left: 68px;
+    width: 20px;
+    height: 15px;
+    background-color: rgba(171, 171, 171, 0.635);
+}
+
+.mountain-bg-1 {
+    position: absolute;
+    width: 233px;
+    height: 181px;
+    left: -21px;
+    top: 314px;
+    background-color: rgba(36, 42, 68, 0.744);
+    border-radius: 50%;
+}
+
+.mountain-bg-2 {
+    position: absolute;
+    width: 234px;
+    height: 153px;
+    left: 236px;
+    top: 317px;
+    background-color: rgba(36, 42, 68, 0.744);
+    border-radius: 50%;
+}
+
+.mountain-fg-1 {
+    position: absolute;
+    width: 417px;
+    height: 322px;
+    z-index: 1;
+    left: 18px;
+    background-color: rgb(42, 42, 57);
+    top: 360px;
+    border-radius: 50%
+}
+.mountain-fg-2{
+    background-color: rgba(38, 37, 46, 0.913);
+    position: absolute;
+    width: 312px;
+    height: 223px;
+    left: -131px;
+    top: 365px;
+    border-radius: 50%;
+}
+.mountain-fg-3{
+    position: absolute;
+    width: 317px;
+    height: 223px;
+    left: 280px;
+    top: 365px;
+    background-color: rgb(38 37 46);
+    border-radius: 50%;
+}
+@keyframes rise{
+    0%{
+        transform: translate(10px,350px);
+    }
+    100%{
+        transform: translate(30px,30px);
+    }
+}
+
+
+.front{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.front .left {
+    padding: 10px;
+    margin: 10px;
+}

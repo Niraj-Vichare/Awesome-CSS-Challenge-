@@ -1,0 +1,99 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 500px;
+    box-shadow: 0 0px 10px 0 rgb(76, 255, 32);
+    border-radius: 10px;
+	transition: .7s;
+  }
+
+  .top{
+    position: absolute;
+    height: 250px;
+    width: 450px;
+    background: rgb(29, 28, 28);
+}
+
+.bottom{
+    position: absolute;
+    top: 50%;
+    height: 250px;
+    width: 450px;
+    background: rgb(70, 251, 115);
+}
+
+.ellipse{
+    z-index: 2;
+    transform-style: preserve-3d;
+    animation: elastic 5s ease-in-out infinite;
+}
+.grey {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: rgb(29, 28, 28);
+    backface-visibility: hidden;
+    border-radius: 50%;
+    z-index: 2;
+    transform: rotateX(0);
+}
+.grey .green{
+    background-color: rgb(70, 251, 115);
+    z-index: 1;
+    transform: rotate(180deg);
+}
+
+
+@keyframes elastic {
+	0% {
+		transform: rotateX(90deg);
+	}
+	15% {
+		transform: rotateX(50deg);
+	}
+	20% {
+		transform: rotateX(70deg);
+	}
+	25% {
+		transform: rotateX(100deg);
+	}
+	
+	45% {
+		transform: rotateX(93deg);
+	}
+	50% {
+		transform: rotateX(90deg);
+	}
+	
+	65% {
+		transform: rotateX(10deg);
+	}
+	70% {
+		transform: rotateX(130deg);
+	}
+	75% {
+		transform: rotateX(60deg);
+	}
+	80% {
+		transform: rotateX(110deg);
+	}
+	85% {
+		transform: rotateX(80deg);
+	}
+	90% {
+		transform: rotateX(97deg);
+	} 
+	95% {
+		transform: rotateX(87deg);
+	}
+	100% {
+		transform: rotateX(90deg);
+	}
+}

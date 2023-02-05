@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+.box{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 650px;
+    overflow: hidden;
+    border-radius: 5px;
+    font-family: Poppins;
+    border: 1px solid rgba(82, 82, 82, 0.519);
+    
+}
+
+#house-img{
+    position: relative;
+    width: 450px;
+    height: 350px;
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
+}
+
+.evergreen{
+    color: rgb(26, 26, 26);
+    font-weight: 300;
+}
+.pricing{
+    display: grid;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+}
+.pricing .price{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.pricing h2{
+    color: rgb(64, 64, 64);
+    font-size: 16px;
+    font-weight: 700;
+}
+.rooms{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.bath{
+    margin-left: 100px;
+}
+.profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 89%;
+    left: 5%;
+}
+
+.contact{
+    margin-top: 20px;
+    display: flex;
+    border-top: 1px solid rgba(128, 128, 128, 0.509);
+}
+.no{
+    display: flex;
+    flex-direction: column;
+    top: 87%;
+    left: 35%;
+    position: absolute;
+
+}
+
+.heart{
+    position: absolute;
+    z-index: 1;
+    left: 90%;
+    top: 2%;
+    opacity: .8;
+}
+
+.name{
+    font-size: 24px;
+}

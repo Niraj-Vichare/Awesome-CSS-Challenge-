@@ -1,0 +1,30 @@
+body{
+    animation: 25s color_change linear infinite;
+    transition: .7s;
+}
+
+@keyframes color_change {
+    0%{
+        transform: translate(-25%);
+        background: rgb(255,28,177);
+        background: linear-gradient(90deg, rgba(255,28,177,1) 0%, rgba(69,34,255,1) 76%);
+    }
+    25%{
+        background: rgb(69,34,255);
+        background: linear-gradient(90deg, rgba(69,34,255,1) 0%, rgba(34,255,219,1) 76%);
+    }
+    50%{
+        transform: translate(-50%);
+        background: rgb(34,255,219);
+        background: linear-gradient(90deg, rgba(34,255,219,1) 0%, rgba(91,255,34,1) 76%);
+    }
+    75%{
+        background: rgb(91,255,34);
+        background: linear-gradient(90deg, rgba(91,255,34,1) 0%, rgba(255,247,34,1) 76%);
+    }
+    100%{
+        background: rgb(255,247,34);
+        background: linear-gradient(90deg, rgba(255,247,34,1) 0%, rgba(255,79,34,1) 76%);
+    }
+    
+}

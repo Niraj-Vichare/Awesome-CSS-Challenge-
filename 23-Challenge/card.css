@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.box{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 600px;
+    border: 1px solid rgb(36, 36, 36);
+    background-color: rgb(32, 32, 32);
+    overflow: hidden;
+    background: rgba(26, 26, 26, 0.8);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 10px;
+    transition: .6s;
+
+}
+
+.image-style{
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    transition: .6s;
+    height: 180px;
+    transform: rotateZ(330deg)
+}
+
+.circle{
+    position: absolute;
+    right: -10px;
+    border-radius: 50%;
+    background-color: #91eb3e;
+    width: 450px;
+    height: 450px;
+    transform: translate(50%,-50%);
+    transition: .6s;
+}
+
+.down-text{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    color: white;
+    transition: .6s;
+}
+
+.box:hover .image-style{
+    transform: rotate(360deg);
+    top: 10%;
+}
+
+.box:hover .down-text{
+    top: 50%;
+}
+
+.box:hover .circle{
+    width: 600px;
+    height: 600px;
+}

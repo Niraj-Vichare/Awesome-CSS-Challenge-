@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+    <div class="frame">
+        <input type='checkbox' id='menu'>
+        <input type='checkbox' id='sh'>
+        <ul class='menu'>
+            <li><span class="fa fa-dashboard"></span>Dashboard</li>
+            <li><span class="fa fa-user"></span>Profile</li>
+            <li><span class="fa fa-bell"></span>Notifications</li>
+            <li><span class="fa fa-comments"></span>Messages</li>
+            <li><span class="fa fa-gear"></span>Settings</li>
+        </ul>
+        <div class="content">
+            <header>
+                <input type='text' class='sh-txt' placeholder="Search ...">
+                <label for='menu' class='menu-button'></label>
+                <div class='title'>Notifications</div>
+                <label for='sh' class="sh fa fa-search search-icon"></label>
+            </header>
+            <div class='line'></div>
+            <div class='notifications'>
+                <div class='notification'>
+                    <span class='time'>9:24 AM</span>
+                    <span class='message'>
+                        <b>John Walker</b> posted a photo on your wall.
+                    </span>
+                </div>
+                <div class='notification'>
+                    <span class='time'>8:19 AM</span>
+                    <span class='message'>
+                        <b>Alice Parker</b> commented your last post.
+                    </span>
+                </div>
+                <div class='notification'>
+                    <span class='time'>Yesterday</span>
+                    <span class='message'>
+                        <b>Luke Wayne</b> added you as friend.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
